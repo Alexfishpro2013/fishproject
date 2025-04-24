@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #whitelist{ 
+        background-color: #797c7c;
+        border: 16px black dotted;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 40%;
+            align-items: center;
+        }
+        #whitelist input{ 
+        height: 30px;
+        width: 90%;
+        border-radius: 8px;
+
+        }
+
+    </style>
+</head>
+<body>
+<h1>com if you wont free Fish</h1>
+<form action="" id="whitelist"><!-- action - дія, яка відбуватиместь після submit -->   
+    <input type="text" placeholder="name" id="holder">
+    <input type="email" placeholder="email" name="" id="email"> 
+    <input type="password"placeholder='password' name="" id="password"> 
+    <input type="date" placeholder="birthday" id="birthday"> 
+    <input type="text"placeholder="what now year" id="year">
+    <input type="submit"placeholder value="Sign Up" id="submit">
+</form>
+<button onclick="clean()"> clean</button>
+<script> 
+    function clean(){
+    document.getElementById("holder").value=""
+    document.getElementById("email").value=""
+    document.getElementById("password").value=""
+    document.getElementById("birthday").value=""
+    document.getElementById("year").value=""
+    }
+
+    //ПИСАТИ ТІЛЬКИ ЕМОДЖІ
+
+
+</script>
+</body>
+</html>
