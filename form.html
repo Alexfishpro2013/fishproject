@@ -46,6 +46,112 @@
 
     //ПИСАТИ ТІЛЬКИ ЕМОДЖІ
 
+    const holder = document.getElementById("holder")
+
+    holder.addEventListener("keydown", (event) => {
+    const code = event.code
+
+    emoji = ''
+
+    if (code === "KeyA"){
+    emoji = '😪'
+    }
+    else if (code ==="KeyB"){
+    emoji = "🤗"
+    }
+    else if (code ==="KeyC"){
+    emoji = "😭"
+    }
+    else if (code ==="KeyD"){
+    emoji = "🌛"
+    }
+    else if (code ==="KeyE"){
+    emoji = "🫡"
+    }
+    else if (code ==="KeyF"){
+    emoji = "😑"
+    }
+    else if (code ==="KeyG"){
+    emoji = "🤘"
+    }
+    else if (code ==="KeyH"){
+    emoji = "🤠"
+    }
+    else if (code ==="KeyI"){
+    emoji = "👱‍♂️"
+    }
+    else if (code ==="KeyJ"){
+    emoji = "👩‍❤️‍👩"
+    }
+    else if (code ==="KeyK"){
+    emoji = "🧛🏻‍♀️"
+    }
+    else if (code ==="KeyL"){
+    emoji = "👩‍🚀"
+    }
+    else if (code ==="KeyM"){
+    emoji = "👶"
+    }
+    else if (code ==="KeyN"){
+    emoji = "👀"
+    }
+    else if (code ==="KeyO"){
+    emoji = "🫸"
+    }
+    else if (code ==="KeyP"){
+    emoji = "🫷"
+    }
+    else if (code ==="KeyQ"){
+    emoji = "👨‍🏭"
+    }
+    else if (code ==="KeyR"){
+    emoji = "👩‍🎓"
+    }
+    else if (code ==="KeyS"){
+    emoji = "🧍‍♂️"
+    }
+    else if (code ==="KeyT"){
+    emoji = "💏"
+    }
+    else if (code ==="KeyU"){
+    emoji = "👥"
+    }
+    else if (code ==="KeyV"){
+    emoji = "🧥"
+    }
+    else if (code ==="KeyW"){
+    emoji = "🖕🏻"
+    }
+    else if (code ==="KeyW"){
+    emoji = "🎅🏼"
+    }
+    else if (code ==="KeyY"){
+    emoji = "🧙🏼‍♀️"
+    }
+    else if (code ==="KeyZ"){
+    emoji = "👦🏼"
+    }
+    else if (code=="Backspace"){
+        holder.value.pop()
+        //функція поп видаляє останній елемнт сипска (видаляє останню букву)
+    }
+    console.log(emoji)
+
+    holder.value+=emoji
+    
+    //const word="okeyavracadabra" //константа - не змінюється (не можемо додати чи змінити текст)
+    //щоб отримати елемент списка ("[o, k, e, y]") за номером необхідно написати номер у квадратних дужках
+
+    //отримувати довжину списка (length)
+    //console.log(word[word.length-1])
+
+    //console.log(holder.value[holder.value.lenght-1])
+
+    event.preventDefault(); //забороняється звичайна подія (додавання символу в інпут)
+
+    })
+
+
 
 </script>
 </body>
